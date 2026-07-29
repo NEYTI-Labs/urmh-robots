@@ -1,0 +1,83 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  padding: 80px;
+  background: linear-gradient(161.01deg, #f0f1f4 28.1%, #c5c7d3 97.04%);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    max-width: 840px;
+    z-index: 3;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 4;
+    h1 {
+      max-width: 700px;
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 16px;
+      .btn {
+        &:last-child {
+          border: 1px solid rgba(0, 113, 227, 0.5);
+          background: none;
+          color: #0071e3;
+          &:hover,
+          &:active{
+            background: #0071e3;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__advantages {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-radius: 24px;
+      padding: 16px;
+      background: #f7f7f8;
+      p {
+        hyphens:auto;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    left: 950px;
+    top: 2%;
+    z-index: 2;
+    img {
+      max-width: none;
+    }
+  }
+  &__background {
+    position: absolute;
+    z-index: 0;
+    left: 24%;
+    top: 0%;
+
+    width: 1432px;
+    height: 800px;
+
+    background-image: url("/public/images/hero_bgr.png");
+     background-size: contain;
+
+    opacity: 0.15; 
+  }
+}
