@@ -1,0 +1,33 @@
+.slider__next , .slider__prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    padding: 17px 20.5px;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 #0000000F;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease;
+    border: none;
+    color: #2C3336;
+}
+
+.slider__next {
+  right: 5px;
+
+}
+.slider__prev {
+  left: 5px;
+}
+
+@media (max-width: 768px) {
+.slider__next , .slider__prev {
+    display: none;
+}
+}

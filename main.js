@@ -1549,6 +1549,13 @@ spaceBetween: 32,
         el: '.swiper-pagination',
         clickable: true,
     },
+    navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev',
+    },
+    autoplay: {
+        delay: 8000,
+    },
 
   breakpoints: {
     0: {
@@ -1582,10 +1589,10 @@ const solutionsSlider = new Swiper('.solutions__list', {
   spaceBetween: 32,
 //   loop: true,
 
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
+    navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev',
+    },
 
   breakpoints: {
     0: {
