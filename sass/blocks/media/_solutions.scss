@@ -3,8 +3,8 @@
     margin: 32px 0 16px;
     &__content {
       gap: 24px;
-      &:last-child {
-        gap: 16px;
+      .swiper {
+        overflow: unset;
       }
     }
     &__head {
@@ -14,9 +14,6 @@
         margin-top: 0;
         text-align: left;
       }
-    }
-    &__list {
-      margin-top: 8px;
     }
     &__item {
       border-radius: 16px;

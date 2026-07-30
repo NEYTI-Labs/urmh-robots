@@ -3,12 +3,7 @@
 .cart-popup,
 .subscribe-popup,
 .advantages-popup,
-.feedback-main-popup,
-.product-cheaper-popup,
-.test-popup,
-.popup-benefits,
-.clear-popup,
-.popup-overlay{
+.feedback-main-popup{
     position: fixed;
     top: 0px;
     left: 0px;
@@ -38,6 +33,7 @@
     border-radius: 24px;
     padding: 40px;
     background: linear-gradient(181.01deg, #F0F1F4 1.88%, #C5C7D3 55.56%);
+    position: relative;
 }
 
 .close-popup{

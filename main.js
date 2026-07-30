@@ -1543,8 +1543,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 const productsSlider = new Swiper('.products__list', {
-  spaceBetween: 32,
   loop: true,
+spaceBetween: 32,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -1561,6 +1561,7 @@ const productsSlider = new Swiper('.products__list', {
     },
     960: {
       slidesPerView: 2,
+        spaceBetween: 32,
     },
     1024: {
       slidesPerView: 2.5,
@@ -1596,6 +1597,7 @@ const solutionsSlider = new Swiper('.solutions__list', {
     },
     900: {
       slidesPerView: 2,
+      spaceBetween: 32,
     },
     1024: {
       slidesPerView: 2.3,

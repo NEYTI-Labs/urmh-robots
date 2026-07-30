@@ -91,3 +91,11 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .hero {
+    &__image {
+      top: 38%;
+    }
+  }
+}

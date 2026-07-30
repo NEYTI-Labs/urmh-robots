@@ -1,6 +1,5 @@
 .solutions {
   margin: 80px 0 40px;
-  overflow: hidden;
   &__content {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@
   }
   &__list {
     width: 100%;
-    overflow: hidden;
     .swiper-slide {
       height: auto;
     }
