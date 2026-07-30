@@ -2,6 +2,7 @@
   .hero {
     &__image {
       left: 755px;
+      top: 13%;
     }
     &__advantages {
       grid-template-columns: repeat(4, 1fr);
