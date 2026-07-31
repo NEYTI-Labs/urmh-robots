@@ -34,7 +34,7 @@
       h4 {
         font-weight: 300;
         font-size: 32px;
-        line-height: 197%;
+        line-height: 1.312;
         color: #0071e3;
         b {
           font-size: 48px;
@@ -123,8 +123,8 @@
     }
   }
   &__benefits {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 16px;
     padding: 88px 0;
     li {
@@ -140,6 +140,7 @@
         font-weight: 400;
         font-size: 18px;
         color: #2c3336;
+        hyphens: auto;
       }
       img {
         max-width: none;
@@ -164,6 +165,17 @@
 
   li:nth-child(5) {
     margin-left: 0;
+  }
+  &-icon {
+    width: 48px;
+    height: 48px;
+    svg {
+    width: 48px;
+    height: 48px;
+    path {
+      stroke-width: 2px;
+    }
+    }
   }
   }
 }

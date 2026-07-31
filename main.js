@@ -1599,7 +1599,11 @@ const solutionsSlider = new Swiper('.solutions__list', {
       slidesPerView: 1,
     },
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.34,
+      spaceBetween: 16,
+    },
+    769: {
+      slidesPerView: 1.6,
       spaceBetween: 16,
     },
     900: {
@@ -1618,3 +1622,72 @@ const solutionsSlider = new Swiper('.solutions__list', {
   },
 });
 })
+
+// ----------------------------consultation-popup----------------------------
+document.addEventListener('DOMContentLoaded', function(){
+    const consultationPopup = document.querySelector('.consultation-popup')
+    const consultationPopupShowBtns = document.querySelectorAll('.show-consultation-popup')
+    const consultationCloseFormBtn = document.querySelector('.consultation-popup .close-popup')
+    const consultationForm = document.querySelector('#consultation-popup form')
+    const consultationSuccess = document.querySelector('.consultation-popup .feedback-success')
+    const consultationSuccessBtn = document.querySelector('.consultation-popup .success-btn')
+    
+  
+    consultationPopupShowBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            consultationPopup.classList.add('active')
+            document.body.classList.add('no-scroll')
+        })
+    })
+    
+ 
+    consultationCloseFormBtn.addEventListener('click', () => {
+    
+        consultationForm.reset()
+    
+        consultationPopup.classList.remove('active')
+        document.body.classList.remove('no-scroll')
+     
+        setTimeout(() => {
+            consultationForm.style.display = 'block'
+            consultationSuccess.style.display = 'none'
+        }, 300) 
+    })
+    
+    consultationForm.addEventListener('submit', (event) => {
+        event.preventDefault() 
+        
+        consultationForm.style.display = 'none'
+        consultationSuccess.style.display = 'block'
+    })
+    
+    consultationSuccessBtn.addEventListener('click', () => {
+       
+        consultationForm.reset() 
+        setTimeout(() => {
+           
+            consultationPopup.classList.remove('active')
+            document.body.classList.remove('no-scroll')
+           
+            setTimeout(() => {
+                consultationForm.style.display = 'block'
+                consultationSuccess.style.display = 'none'
+            }, 300) 
+        }, 0)
+    })
+    
+    document.addEventListener('click', (event) => {
+        if (event.target === consultationPopup) {
+           
+            consultationForm.reset()
+            
+            consultationPopup.classList.remove('active')
+            document.body.classList.remove('no-scroll')
+            
+            setTimeout(() => {
+                consultationForm.style.display = 'block'
+                consultationSuccess.style.display = 'none'
+            }, 300) 
+        }
+    });
+});

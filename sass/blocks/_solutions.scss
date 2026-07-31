@@ -79,6 +79,7 @@
       font-weight: 600;
       font-size: 35px;
       color: #fff;
+      line-height: 1.29;
       z-index: 4;
     }
     &-list {
@@ -99,6 +100,9 @@
       }
     }
     &-text {
+      h4 {
+        line-height: 1.29;
+      }
       p {
         margin-top: 8px;
         font-size: 18px;

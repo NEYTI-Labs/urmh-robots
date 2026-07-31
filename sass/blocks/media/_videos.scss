@@ -62,9 +62,15 @@
 
 @media (max-width: 576px) {
   .videos {
+    &__text {
+      p {
+        line-height: 1.25;
+      }
+    }
     &__item {
       h4 {
         font-size: 18px;
+        line-height: 1.22;
       }
       p {
         font-size: 14px;
